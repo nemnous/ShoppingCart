@@ -35,7 +35,8 @@ button {
 form {
     /* opacity: 100%; */
     /* border: 3px solid #f1f1f1; */
-    font-size: 150%;
+    font-size: 100%;
+    text-align: left;
     color: rgb(197, 140, 70);
 }
 .container { 
