@@ -1,0 +1,59 @@
+h2 {
+    color: bisque;
+    font-size: 500%;
+    text-align: center;
+    background-color: black
+    /* border: solid black; */
+}
+
+input[type=text], input[type=password] { 
+    width: 100%; 
+    padding: 12px 20px; 
+    margin: 8px 0; 
+    display: inline-block; 
+    border: 1px solid #ccc; 
+    box-sizing: border-box; 
+} 
+button { 
+    background-color: black; 
+    color: white; 
+    padding: 14px 20px; 
+    margin: 8px 0; 
+    border: none; 
+    cursor: pointer; 
+    /* width: 50%;  */
+} 
+.cancelbtn { 
+    padding: 14px 20px; 
+    background-color: #f44336; 
+    /* width: 50%; */
+} 
+.cancelbtn,.signupbtn { 
+    float: left; 
+    width: 50%; 
+} 
+form {
+    /* opacity: 100%; */
+    /* border: 3px solid #f1f1f1; */
+    font-size: 150%;
+    color: rgb(197, 140, 70);
+}
+.container { 
+    width: 100%;
+    padding: 16px; 
+} 
+  
+  
+.clearfix::after { 
+    content: ""; 
+    clear: both; 
+    display: table; 
+    width:100%
+} 
+  
+  
+@media screen and (max-width: 300px) { 
+    .cancelbtn, .signupbtn { 
+       width: 100%; 
+    } 
+} 
