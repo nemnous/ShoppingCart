@@ -1,6 +1,6 @@
-* {
+/* * {
     box-sizing: border-box;
-  }
+  } */
   
   body {
     margin: 0;
@@ -42,24 +42,25 @@
     background: #ddd;
     color: black;
   }
+  
 body { 
-    background: url("../assets/DressStart.jpg") no-repeat center center fixed; 
+    background: url("../assets/wallpaper.jpg") no-repeat center center fixed; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
 
-    min-height: 100%;
-  min-width: 1024px;
+  min-height: 100%;
+  min-width: 100%;
 	
   /* Set up proportionate scaling */
-  width: 100%;
-  height: auto;
+  /* width: 100%;
+  height: auto; */
 	
-  /* Set up positioning */
+  /* Set up positioning
   position: fixed;
   top: 0;
-  left: 0;
+  left: 0; */
   }
 
 
@@ -72,7 +73,7 @@ body {
     /* float: right; */
     color: #f2f2f2;
     text-align: center;
-    padding: 14px 16px;
+    padding: 5px 16px;
     text-decoration: none;
     font-size: 22px;
   }
@@ -86,6 +87,54 @@ body {
     background-color: #4CAF50;
     color: white;
   }
+  
+.dropdown {
+  float: right;
+  overflow: hidden;
+  /* display: inline; */
+}
+
+.dropdown .dropbtn {
+  /* font-size: 16px;   */
+  text-align: center;
+  border: none;
+  outline: none;
+  color: white;
+  /* padding: 14px 16px; */
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color: grey;
+}
+
+.dropdown-content {
+  display: none;
+  position: relative;
+  background-color: #f9f9f9;
+  min-width: 100px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
 /* 
 
   <nav>

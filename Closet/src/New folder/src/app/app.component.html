@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+</head>
+<body>
+  <div class="container-fluid">
+    <div class="row content; topnav" style="opacity:0.8">
+      <div class="col-sm-1" >
+        <!-- Hola Hola -->
+        <nav>
+          <a routerLink = "/Home">Home</a>
+        </nav>
+      </div>
+      <div class="col-sm-9">   
+      </div>
+      <div class="col-sm-1">
+          <nav>
+            <a routerLink="/login">Login</a>
+          </nav>
+        </div>
+      <div class="col-sm-1">
+        <nav>
+          <a routerLink="/SignUp">SignUp</a>
+        </nav>
+      </div>
+      
+    </div>
+  
+    <div class="row" id = "nani">
+      <div class="col-sm-4">
+        <br>
+        <img src="../assets/Logo.png" alt="Logo" height="80%" width="100%">
+      </div>
+      <div class="col-sm-2">
+      </div>
+      <div class="col-sm-6" align = "right">
+        <router-outlet></router-outlet>
+        <!-- <router-outlet></router-outlet> -->
+      </div>
+    </div>
+  </div>
+<!-- 
+  <div style="float:left;">
+      <img src="../assets/Logo.png" alt="Logo" height="400" width="700">
+  </div>
+  <div>
+    <router-outlet></router-outlet>
+    <router-outlet></router-outlet> 
+  </div> -->
+    <!-- <div class = "content">
+      <nav>
+        <a routerLink="/login">Login</a>
+      </nav>
+      <router-outlet></router-outlet> 
+    </div> -->
+  <div  class="gg"> 
+    <video autoplay loop id="myVideo" >
+      <source src="../assets/HomeVideo.mp4" type="video/mp4">
+      Your browser does not support HTML5 video.
+    </video>
+  </div>
+  <!-- <iframe  -->
+
+</body>
+</html>

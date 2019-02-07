@@ -7,6 +7,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { SignupComponent } from './signup/signup.component';
 import { HomeComponent } from './home/home.component';
 import { CatalogComponent } from './catalog/catalog.component';
+import { CartComponent } from './cart/cart.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { CatalogComponent } from './catalog/catalog.component';
     LoginPageComponent,
     SignupComponent,
     HomeComponent,
-    CatalogComponent
+    CatalogComponent,
+    CartComponent
   ],
   imports: [
     BrowserModule,
