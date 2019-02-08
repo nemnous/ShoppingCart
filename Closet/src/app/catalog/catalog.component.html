@@ -1,0 +1,15 @@
+
+<div class="container" >
+    <div class="card-deck" >
+        <div class="card" *ngFor = "let prod of dispproducts; let i = index">
+         <!-- <div *ngIf = "prod.pname.toLowerCase().includes(srch.toLowerCase())"> -->
+            <div class="card-body text-center">
+                <h2 style="text-align:center">{{prod.pname}}</h2>
+                <img src= "../../assets/Products/{{prod.image}}" alt="Product Image" style="width:100%">
+                <p style="background-color: lavenderblush"><b>Price: </b>Rs {{prod.price}}</p>
+                <p><button id = {{prod._id}} (click) = addToCart($event)>Add to Cart</button></p>
+            </div>
+        <!-- </div> -->
+        </div>
+    </div>
+</div>

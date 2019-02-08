@@ -17,26 +17,32 @@
             <th>Product Name</th>
             <th>Quantity</th>
             <th>Price</th>
+            <th>Sub Total</th>
           </tr>
           <!-- Iterate Cart Array here -->
-          <tr>
-            <td>Shoe</td>
-            <td><div class="dropdown">
-              <button class="btn btn-primary dropdown-toggle" style="color: white" type="button" data-toggle="dropdown">1
-              <span class="caret"></span></button>
-              <ul class="dropdown-menu">
-                <li><a href="#">1</a></li>
-                <li><a href="#">2</a></li>
-                <li><a href="#">3</a></li>
-              </ul>
-              </div>
-            </td>
-            <td>12345</td>
+        <!-- <div *ngFor = "let items of cartDetailsArray"> -->
+          <tr *ngFor = "let items of cartDetailsArray; index as i">
+            <td>{{items.product.pname}}</td>
+            <td>
+                <select name = {{i}} [(ngModel)] = "count">
+                  <option  value=1>1</option>
+                  <option value=2>2</option>
+                  <option value=3>3</option>
+                  <option value=4>4</option>
+                </select>
+                <!-- <input type="text" name="count" [(ngModel)] = "count" value=1> -->
+              </td>
+            <td>{{items.product.price}}</td>
+            <td>{{items.product.price *count}}</td>
           </tr>
         </table>
-    </div>
+        <a routerLink = "../checkout/">
+          <button> Checkout </button>
+        </a>
+        </div>
     <!-- </div> -->
   </div>
+
   <!-- <footer class="container-fluid text-center">
     <p>Online Store Copyright</p>  
     <form class="form-inline">Get deals:

@@ -1,0 +1,44 @@
+{
+	"Mens": [{
+			"prdName": "Men's Formal-Shirt_Navy Blue",
+			"description": "AKAAS Cotton Blend Full Sleeve ",
+			"image": ["1_1.jpg","1_2.jpg", "1_3.jpg"],
+			"quantity":"10"
+		},
+		{
+			"prdName": "Men's Formal Shirt Red",
+			"description": "AKAAS Men's Checkred Slim",
+			"image": ["2_1.jpg", "2_2.jpg", "2_3.jpg"],
+			"price": "rs 520",
+			"quantity":"20"
+		},
+		{
+			"prdName": "Katso-Hood-Full",
+			"description": "Katso Men's Cotton T-Shirt",
+			"image": ["3_1.jpg", "3_2.jpg", "3_3.jpg"],
+			"price": "rs 480",
+			"quantity":"30"
+		},
+		{
+			"prdName": "Men's Cotton T-Shirt",
+			"description": "Campus Sutra",
+			"image": ["4_1.jpg", "4_2.jpg", "4_3.jpg"],
+			"price": "rs 380",
+			"quantity":"40"
+		},
+		{
+			"prdName": "Men's Polo",
+			"description": "Allen Solly",
+			"image": ["5_1.jpg", "5_2.jpg", "5_3.jpg"],
+			"price": "rs 540",
+			"quantity":"40"
+		},
+		{
+			"prdName": "Men's Cotton T Shirt",
+			"description": "AELO ",
+			"image": ["6_1.jpg", "6_2.jpg", "6_3.jpg"],
+			"price": "rs 800",
+			"quantity":"40"
+		}
+	]
+}

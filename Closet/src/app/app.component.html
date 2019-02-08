@@ -11,25 +11,26 @@
     <div class="col-sm-12">
       <div class="topnav">
           <a routerLink="/Home">Home</a>
-          <a routerLink="/catalog">Catalog</a> 
-          <div class="search-container" style="width:10%; display: inline;"> 
+          <a routerLink="/catalog">Catalog</a>
+          <div class="search-container" style=" display: inline;"> 
               <!-- <form action="/action_page.php" style="width:10%"> -->
-                <input type="text" placeholder="Search.." name="search">
-                <button type="submit"><i class="fa fa-search"></i></button>
+                <input type="text" placeholder="Search.." [(ngModel)] = search name="search">
+                <a routerLink = "../catalog/{{search}}">
+                  <button type="submit" style = "background-color: lightgray"><i class="fa fa-search"></i></button>
+              </a>
               <!-- </form> -->
             </div>
             <div class="dropdown" >
-                <button class="dropbtn"><i style="float:left" class="glyphicon glyphicon-user"> Account</i>
-                  <i class="fa fa-caret-down"></i>
-                </button>
-            <div class="dropdown-content" >
-                <a routerLink="/login">Login</a>
-                <a  routerLink="/SignUp">SignUp</a>
+              <button class="dropbtn"><i style="float:left" class="glyphicon glyphicon-user"> Account</i>
+                <i class="fa fa-caret-down"></i>
+              </button>
+              <div class="dropdown-content" >
+                  <a routerLink="/login">Login</a>
+                  <a  routerLink="/SignUp">SignUp</a>
               </div>
-              </div>
+            </div>
           
           <a routerLink ="/cart">Cart</a>
-          
       </div>
     </div>
   </div>

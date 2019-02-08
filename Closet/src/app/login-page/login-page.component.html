@@ -14,28 +14,29 @@
       <div class="container" >
         <label for="uname"><b>Username</b></label>
         <br>
-        <input type="text" placeholder="Enter Username" name="uname" required>
+        <input type="text" placeholder="Enter Username" [(ngModel)] = "username"  name="username" required>
         <br>
         <label for="psw"><b>Password</b></label>
         <br>
-        <input type="password" placeholder="Enter Password" name="psw" required>
+        <input type="password" placeholder="Enter Password" [(ngModel)] = "password" name="password" required>
         <br>
         <!-- <button id = "Loginsubmit"type="submit">Login</button> -->
-        <form action="#../catalog/catalog.component.html" method="get" target="_blank">
-          <!-- First name: <input type="text" name="fname"><br>
-          Last name: <input type="text" name="lname"><br> -->
-          <input type="submit" value="Submit">
-        </form>
-        <br>
         <label>
           <input type="checkbox" checked="checked" name="remember"> Remember me
         </label>
+        <form action="#../catalog/catalog.component.html" method="get" target="_blank">
+          <!-- First name: <input type="text" name="fname"><br>
+          Last name: <input type="text" name="lname"><br> -->
+          <button type="reset" (click) = logincheck() value="Submit"> Login</button>
+        </form>
+        <br>
+        
       </div>
 
-      <div id = cancelDiv class="container" style="background-color:#f1f1f1">
+      <!-- <div id = cancelDiv class="container" style="background-color:#f1f1f1">
         <button type="button" class="cancelbtn">Cancel</button>
         <span class="psw"><a href="#">Forgot Password?</a></span>
-      </div>
+      </div> -->
     </form>
   </div>
   <!-- <div  class="gg"> 
